@@ -8,6 +8,7 @@ project(planning
 )
 
 set(CMAKE_CXX_STANDARD 17)
+enable_testing()
 
 #变量和目录设置
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
@@ -27,3 +28,4 @@ endif()
 
 #添加子文件
 add_subdirectory(src) # 保持原有结构，但需确保子目录层级正确
+add_subdirectory(test/map_test)
